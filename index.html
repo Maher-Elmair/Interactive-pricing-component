@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add a Favicon to your Site -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <!--Font Awesone Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--Main Template Css File-->
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Interactive pricing component</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="app">
+                <div class="heading">
+                    <p>Simple, traffic-based pricing</p>
+                    <p>Sign-up for our 30-day trial. No credit card required. </p>
+                </div>
+                <div class="card">
+                    <div class="price-container">
+                        <div class="Pag"><span id="Pageviews">100K Pageviews</span></div>
+                        <div class="mon">
+                            <p id="price">$16.00<span id="interval">/month</span></p>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <input name="price-slider" id="price_slider" type="range" min="-2" max="2" step="1" value="0"
+                            aria-valuemin="-2" aria-valuemax="2" aria-valuenow="0" aria-label="price range slider" />
+                    </div>
+                    <div class="billing-container">
+                        <p id="monthly-billing">Monthly Billing</p>
+                        <label class="switch">
+                            <input id="interval_switch" type="checkbox" aria-checked="false " />
+                        </label>
+                        <p id="yearly-billing">Yearly Billing</p>
+                        <span class="discount-large">25% discount</span>
+                        <span class="discount-small">25% </span>
+                    </div>
+                    <div class="About">
+                        <ul>
+                            <li>Unlimited websites</li>
+                            <li>100% data ownership</li>
+                            <li>Email reports</li>
+                        </ul>
+                        <div id="Start" href="#" class="Start">Start my trial</div>
+                    </div>
+                </div>
+            </div>
+            <!-- start Attribution -->
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+                    Mentor</a>.
+                Coded by <a href="https://maher-elmair.github.io/My_Website" target="_blank">Maher Elmair</a>.
+            </div>
+            <!-- end Attribution -->
+        </div>
+    </div>
+    <!--Main Template Java Script File-->
+    <script src="Scripts/app.js"></script>
+</body>
+
+</html>
